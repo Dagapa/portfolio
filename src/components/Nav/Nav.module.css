@@ -1,0 +1,37 @@
+.Nav {
+  height: 100px;
+  width: 100%;
+  background-color: #011526;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  z-index: 1;
+  font-family: 'Source Serif Pro', serif;
+  opacity: .8;
+}
+
+.Nav_left img {
+  height: 100px;
+  width: 100px;
+}
+
+.Nav_right {
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+.Nav_right button {
+  padding: 15px;
+  margin-right: 20px;
+  background-color: #011526;
+  color: #035AA6;
+  border: none;
+  font-size: 18px;
+}
+
+.Nav_right button:hover {
+  background-color: #163154;
+  color: white;
+  border-radius: 10px;
+}
