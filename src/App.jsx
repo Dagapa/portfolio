@@ -1,18 +1,25 @@
-import { Nav } from './components/Nav/Nav'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { ContactForm } from './components/ContactForm/ContactForm'
-import './App.css'
+import Nav from './components/Nav/Nav'
 import { Main } from './components/Main/Main'
+import { About } from './components/About/About'
+import './App.css'
 
 
 function App() {
 
   return (
-    <div className='App'>
-      <Nav file="./assets/Cv.pdf"/>
-      <Main/>
-  
-      <ContactForm />
-    </div>
+    <BrowserRouter>
+      <Nav file="./assets/Cv.pdf" />
+      <div className='App'>
+        <Routes>
+          <Route path='/' element={<Main />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<ContactForm />} />
+          <Route path='*' element={<Main />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   )
 }
 

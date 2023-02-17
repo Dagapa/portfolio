@@ -8,15 +8,48 @@
 }
 
 .Main-Img img {
-  width: 300px;
-  height: 300px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  width: 400px;
+  height: 500px;
 }
 
 .Main-Description {
   justify-content: center;
-  width: 30%;
-  padding: 15px;
-  margin: 20px auto;
+  width: 40%;
+  padding: 10px;
+  margin: 100px auto;
   text-align: center;
   font-size: 12px;
+}
+
+.Main-Buttons button {
+  justify-content: center;
+  margin: 40px 10px;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #011526;
+  color: #035AA6;
+  font-size: 14px;
+}
+
+.Main-Buttons button:hover {
+  background-color: #163154;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Main-Icons img{
+  height: 70px;
+  width: 70px;
+  margin: 10px;
+  filter: grayscale(100%);
+}
+
+.Main-Icons img:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
 }

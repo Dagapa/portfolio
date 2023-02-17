@@ -1,24 +1,31 @@
+import { Link } from 'react-router-dom'
 import Logo from '../../assets/Logo-sin-fondo.png'
 import styles from './Nav.module.css'
 
-export const Nav = (props) => {
+const Nav = (props) => {
   return (
     <nav className={styles.Nav}>
       <div className={styles.Nav_left}>
-        <img src={Logo} alt="Logo" />
+        <Link to={'/'}>
+          <img src={Logo} alt="Logo" />
+        </Link>
       </div>
       <div className={styles.Nav_right}>
-        <a href="">
-          <button> Proyects </button>
-        </a>
+        <Link to={'/about'} >
+          <button> Sobre mi </button>
+        </Link>
+        <Link to={'/projects'} >
+          <button> Proyectos </button>
+        </Link>
         <a href={props.file} download>
           <button>Cv</button>
         </a>
-        <a href="">
-          <button> Contact </button>
-        </a>
+        <Link to={'/contact'} >
+          <button> Contacto </button>
+        </Link>
       </div>
     </nav>
   )
 }
 
+export default Nav
