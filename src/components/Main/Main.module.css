@@ -11,16 +11,25 @@
   border: 1px solid transparent;
   border-radius: 15px;
   width: 400px;
-  height: 500px;
+  height: 90%;
 }
 
 .Main-Description {
   justify-content: center;
   width: 40%;
-  padding: 10px;
-  margin: 100px auto;
+  padding: 5px;
+  margin: 20px auto;
   text-align: center;
-  font-size: 12px;
+}
+
+.Main-Description h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.Main-Description h2 {
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .Main-Buttons button {
@@ -31,14 +40,13 @@
   border-radius: 10px;
   background-color: #1c415c;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .Main-Buttons button:hover {
   background-color: #163154;
   color: white;
   border-radius: 10px;
-  font-size: 20px;
   cursor: pointer;
 }
 
@@ -56,5 +64,4 @@
 
 .Main-Icons img:hover {
   filter: grayscale(0%);
-  cursor: pointer;
 }

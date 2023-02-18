@@ -16,6 +16,7 @@ export const Main = () => {
             <img src="https://picsum.photos/200" alt="" />
           </div>
           <div className={styles['Main-Description']}>
+            <h1>WEB DEVELOPER</h1>
             <h2>
               ¡Hola! Soy David Gallego, un desarrollador web enfocado en el
               frontend pero también tengo conocimientos sólidos en el área de
