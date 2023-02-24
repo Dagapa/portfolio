@@ -26,7 +26,7 @@ export const Main = () => {
               alta calidad y estoy emocionado por el futuro del desarrollo web.
             </h2>
             <div className={styles['Main-Buttons']}>
-              <Link to={'/proyects'}>
+              <Link to={'/projects'}>
                 <button>Proyectos</button>
               </Link>
               <Link to={'/contact'}>
