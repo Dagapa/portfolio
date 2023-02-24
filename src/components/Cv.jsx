@@ -1,6 +1,7 @@
-function Cv(props) {
+function Cv() {
+  const file = '../assets/Cv-David-Gallego.pdf'
   return (
-    <a href={props.file} download>
+    <a href={file} download>
       <button>Descargar</button>
     </a>
   );

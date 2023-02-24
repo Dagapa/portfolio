@@ -10,7 +10,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Nav file="./assets/Cv.pdf" />
+      <Nav/>
       <div className='App'>
         <Routes>
           <Route path='/' element={<Main />} />
