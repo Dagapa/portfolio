@@ -1,0 +1,28 @@
+.cards-projects {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;  
+  justify-content: center;
+  padding: 16px;
+  background-color: #1c415c;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  background-color: #1c415c;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50px;
+}
+
+.cards-projects:hover {
+  transform: scale(1.1);
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

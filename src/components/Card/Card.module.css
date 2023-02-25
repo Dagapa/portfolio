@@ -1,0 +1,26 @@
+.cards {
+  padding: 10px;
+}
+
+.name {
+  font-size: 18px;
+}
+
+.cards > p {
+  font-size: smaller;
+  text-align: start;
+}
+
+.projects-slider {
+  justify-content: center;
+}
+
+.projects-slider > ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 5px;
+  margin: 0 auto;
+  gap: 10px;
+  list-style: none;
+}

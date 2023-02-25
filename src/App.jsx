@@ -3,6 +3,7 @@ import { ContactForm } from './components/ContactForm/ContactForm'
 import Nav from './components/Nav/Nav'
 import { Main } from './components/Main/Main'
 import { About } from './components/About/About'
+import Projects from './components/projects/Projects'
 import './App.css'
 
 
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/about' element={<About />} />
+          <Route path='/projects' element={<Projects />} />
           <Route path='/contact' element={<ContactForm />} />
           <Route path='*' element={<Main />} />
         </Routes>

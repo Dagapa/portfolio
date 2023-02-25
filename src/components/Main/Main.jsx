@@ -6,6 +6,7 @@ import reduxIcon from '../../assets/icons8-redux.svg'
 import cssIcon from '../../assets/icons8-css3.svg'
 import nodeIcon from '../../assets/icons8-nodejs.svg'
 import postgresIcon from '../../assets/icons8-postgresql.svg'
+import { Carousel } from '../Carousel/Carousel'
 
 export const Main = () => {
   return (
@@ -42,6 +43,17 @@ export const Main = () => {
               <img src={postgresIcon} alt="Postgres" />
             </div>
           </div>
+        </section>
+        <section className={styles['projects-container']}>
+          <h3>Proyectos</h3>
+          <div className={styles['projects-container--carousel']}>
+            <Carousel />
+          </div>
+        </section>
+        <section className={styles['contact-container']}>
+          <button className={styles['contact-button']}>
+            Contactame
+          </button>
         </section>
       </main>
     </>
