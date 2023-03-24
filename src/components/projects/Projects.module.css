@@ -15,7 +15,8 @@
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   padding: 16px;
   text-align: center;
-  width: calc(33.33% - 8px)
+  width: calc(33.33% - 100px);
+  height: 300px
 }
 
 .projects-item:hover {

@@ -1,10 +1,11 @@
 import videoGamesImage from './assets/video-games.png'
+import TodoListImage from './assets/todoMachine.png'
 export const myProjects = [
   {
     id: 1,
     name: "ToDo Machine",
     technologies: ["Javascript", "React", "Css"],
-    image: "",
+    image: TodoListImage,
     description:
       "Este proyecto es una aplicación web de lista de tareas que permite a los usuarios crear, completar y eliminar tareas. Está desarrollado en React utilizando React Hooks y LocalStorage para mantener un registro de las tareas creadas por el usuario. La aplicación es fácil de usar y tiene una interfaz sencilla e intuitiva.",
     characteristics: [
@@ -12,7 +13,7 @@ export const myProjects = [
       "Las tareas pueden ser marcadas como completadas cuando se hayan terminado.",
       "Las tareas también pueden ser eliminadas de la lista de tareas.",
     ],
-    url: "",
+    url: "https://todo-list-nine-virid.vercel.app/",
   },
   {
     id: 2,
