@@ -1,24 +1,27 @@
-import styles from './Card.module.css'
-export const Card = ({ name, technologies, image, description, url }) => {
+import { Link } from "react-router-dom";
+import styles from "./Card.module.css";
+export const Card = ({ id, name, technologies, image, description, url }) => {
   return (
-    <>
-      {description ?
+    <div className={styles["card-container"]}>
+      {description ? (
         //projects page
-        <div className={styles['projects-page']}>
+        <div className={styles["projects-page"]}>
           <h3>{name}</h3>
           <img src={image} alt={name} />
           <p>{description}</p>
-        </div> :
+        </div>
+      ) : (
         //slider main page
-        <div className={styles['projects-slider']}>
+        <div className={styles["projects-slider"]}>
           <h3>{name}</h3>
           <img src={image} alt={name} />
-          <ul>
-            {technologies.map((tech, index) =>
-              <li key={index}>{tech}</li>)
-            }
-          </ul>
-        </div>}
-    </>
-  )
-}
+          <div className={styles["button-tech"]}>
+            {technologies.map((tech, index) => (
+              <button key={index}>{tech}</button>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};

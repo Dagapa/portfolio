@@ -8,6 +8,8 @@
   background-color: #1c415c;
   border-radius: 4px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 350px;
 }
 
 .btn {
@@ -16,6 +18,10 @@
   height: 60px;
   border: none;
   border-radius: 50px;
+}
+
+.btn img {
+  filter: invert(1);
 }
 
 .cards-projects:hover {

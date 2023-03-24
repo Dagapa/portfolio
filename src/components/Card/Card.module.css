@@ -1,3 +1,7 @@
+.card-container{
+  display: flex;
+}
+
 .cards {
   padding: 10px;
 }
@@ -15,12 +19,18 @@
   justify-content: center;
 }
 
-.projects-slider > ul {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 5px;
-  margin: 0 auto;
-  gap: 10px;
-  list-style: none;
+.projects-slider img {
+  width: 300px;
+}
+
+.projects-slider > button {
+ margin-top: 40px;
+ height: 35px;
+ border: transparent;
+ border-radius: 10px;
+ background-color: #112e42;
+}
+
+.button-tech > button {
+  margin: 5px;
 }

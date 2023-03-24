@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { myProjects } from "../../myProjects"
 import { Card } from "../Card/Card";
+import arrowIcon from "../../assets/arrow-big-right-filled.svg"
 import styles from "./Carousel.module.css"
 
 export const Carousel = () => {
@@ -20,7 +21,7 @@ export const Carousel = () => {
         </div>)}
       <Link to={'/projects'}>
         <button className={styles.btn}>
-          Go
+          <img src={arrowIcon} alt="" />
         </button>
       </Link>
     </>

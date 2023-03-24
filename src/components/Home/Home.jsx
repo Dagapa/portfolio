@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import styles from './Main.module.css'
+import styles from './Home.module.css'
 import javaScriptIcon from '../../assets/icons8-javascript-96.svg'
 import reactIcon from '../../assets/react.svg'
 import reduxIcon from '../../assets/icons8-redux.svg'
@@ -8,7 +8,7 @@ import nodeIcon from '../../assets/icons8-nodejs.svg'
 import postgresIcon from '../../assets/icons8-postgresql.svg'
 import { Carousel } from '../Carousel/Carousel'
 
-export const Main = () => {
+export const Home = () => {
   return (
     <>
       <main >
@@ -26,14 +26,6 @@ export const Main = () => {
               tecnologías. Me gusta trabajar en equipo para crear proyectos de
               alta calidad y estoy emocionado por el futuro del desarrollo web.
             </h2>
-            <div className={styles['Main-Buttons']}>
-              <Link to={'/projects'}>
-                <button>Proyectos</button>
-              </Link>
-              <Link to={'/contact'}>
-                <button>Contactame</button>
-              </Link>
-            </div>
             <div className={styles['Main-Icons']}>
               <img src={javaScriptIcon} alt="JavaScript" />
               <img src={reactIcon} alt="React" />
@@ -51,9 +43,11 @@ export const Main = () => {
           </div>
         </section>
         <section className={styles['contact-container']}>
-          <button className={styles['contact-button']}>
+          <Link to={'/contact'}>
+          <button className={styles['contact-button']}> 
             Contactame
           </button>
+          </Link>
         </section>
       </main>
     </>

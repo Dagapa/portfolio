@@ -1,0 +1,21 @@
+.detail-container {
+  margin: 30px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-item img{
+  width: 500px;
+}
+
+.detail-item p {
+  width: 80%;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
