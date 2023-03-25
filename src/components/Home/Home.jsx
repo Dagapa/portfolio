@@ -6,6 +6,7 @@ import reduxIcon from '../../assets/icons8-redux.svg'
 import cssIcon from '../../assets/icons8-css3.svg'
 import nodeIcon from '../../assets/icons8-nodejs.svg'
 import postgresIcon from '../../assets/icons8-postgresql.svg'
+import typeScriptIcon from "../../assets/icons8-typeScript.svg"
 import { Carousel } from '../Carousel/Carousel'
 
 export const Home = () => {
@@ -28,6 +29,7 @@ export const Home = () => {
             </h2>
             <div className={styles['Main-Icons']}>
               <img src={javaScriptIcon} alt="JavaScript" />
+              <img src={typeScriptIcon} alt="" />
               <img src={reactIcon} alt="React" />
               <img src={reduxIcon} alt="Redux" />
               <img src={cssIcon} alt="Css" />
